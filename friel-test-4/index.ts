@@ -7,6 +7,10 @@ const bucket = new aws.s3.Bucket("my-bucket", {
     acl: "private", 
 });
 
+aws.getCallerIdentityOutput().apply(x => {
+  console.log(`hello ${x.accountId}`);
+});
+
 // Export the name of the bucket
 export const bucketName = bucket.id;
 
