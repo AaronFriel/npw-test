@@ -1,0 +1,3 @@
+name: friel-test-npw-source-url
+runtime: go
+description: A minimal Aiven Go Pulumi program
